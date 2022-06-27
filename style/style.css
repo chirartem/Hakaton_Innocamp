@@ -5,4 +5,28 @@ body {
 .header {
 	background-color: #8789C0;
 	height: 71px;
+	margin-bottom: 21px;
+}
+
+.info {
+	max-width: 1219px;
+	min-height: 870px;
+	margin: 0 auto;
+	background-color: #EFF7F6;
+	padding: 27px 35px 35px 33px;
+}
+
+.info__text {
+	font-family: 'Inter';
+	/*font-weight: 600;*/
+	font-size: 48px;
+}
+
+.title {
+	line-height: 49px;
+	font-size: 48px;
+}
+
+.subtitle {
+	font-size: 38px;
 }
