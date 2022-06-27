@@ -1,6 +1,6 @@
 body {
 	background-color: #2B2D42;
-	font-family: Inter;
+	font-family: Arial;
 	color: #000;
 }
 
@@ -15,13 +15,34 @@ body {
 
 .info {
 	max-width: 1219px;
-	/*min-height: 870px;*/
 	margin: 0 auto;
 	background-color: #EFF7F6;
 	padding: 27px 35px 20px 33px;
-	/*display: flex;*/
-	/*flex-direction: column;*/
-	/*justify-content: space-between;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.form-refresh {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.btn-refresh {
+	background-color: green;
+	border-bottom-left-radius: 4px;
+	color: white;
+	padding: 5px;
+	padding-left: 28px;
+	padding-bottom: 8px;
+	transition-duration: .5s;
+	transform: translateX(80px);
+	font-size: 17px;
+}
+
+.btn-refresh:hover {
+	transform: translateX(0);
 }
 
 .info__inner {
@@ -30,9 +51,9 @@ body {
 
 .info__text-main {
 	max-width: 647px;
-	margin-right: 17px;
 	font-size: 30px;
 	margin-bottom: 14px;
+	/*border-bottom: 1px solid #a2a9b1;*/
 }
 
 .map-block__map-inner:first-child {
@@ -91,13 +112,31 @@ body {
 	background-position-x: right;
 }
 
+@media (max-width: 800px) {
+	.btn-refresh {
+		padding: 8px;
+		transform: translateX(0);
+		font-size: 19px;
+	}
+
+	.btn-refresh:hover {
+		transform: translateX(0);
+	}
+}
+
 @media (max-width: 712px) {
 	.title {
 		font-size: 39px;
+		line-height: 52px;
+		margin-bottom: 11px;
 	}
 
 	.subtitle {
-		font-size: 33px;
+		font-size: 30px;
+	}
+
+	.info__text-main {
+		font-size: 24px;
 	}
 
 	.info-footer__link {
@@ -113,7 +152,7 @@ body {
 	}
 
 	.info__text-top {
-		line-height: 58px;
+		line-height: 38px;
 	}
 }
 
@@ -122,6 +161,11 @@ body {
 		font-size: 32px;
 		line-height: 40px;
 		margin-bottom: 10px;
+	}
+
+	.info__text-main {
+		font-size: 18px;
+		margin-bottom: 18px;
 	}
 
 	.header {
@@ -146,19 +190,32 @@ body {
 	}
 
 	.info-footer__link::after {
-		right: 40px;
-		bottom: 16px;
+		right: -55px;
+		bottom: -5px;
 	}
 }
 
 @media (max-width: 430px) {
 	.info-footer__link::after {
 		right: 5px;
+		bottom: 11px;
 	}
 }
 
 @media (max-width: 380px) {
 	.info-footer__link::after {
 		right: -25px;
+	}
+
+	.title {
+		line-height: 37px;
+	}
+
+	.info__text-top {
+		line-height: 33px;
+	}
+
+	.info__text-top {
+		line-height: 34px;
 	}
 }
