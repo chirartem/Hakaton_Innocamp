@@ -1,0 +1,68 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+
+ul, ol[class], menu {
+	padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, 
+p, ul, ol[class], menu li, figure, 
+figcaption, blockquote, dl, dd {
+	margin: 0;
+}*/
+
+ul, menu {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+input, button, textarea {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+button {
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+}
+
+input {
+	outline: none;
+}
+
+input, button {
+	background-color: #fdf5de;
+}
