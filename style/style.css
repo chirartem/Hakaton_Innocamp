@@ -1,10 +1,10 @@
 body {
 	background-color: #2B2D42;
-	font-family: 'Inter';
+	font-family: Inter;
 	color: #000;
 }
 
-.wrapper {
+.container {
 	padding: 30px 62px 40px;
 }
 
@@ -24,8 +24,26 @@ body {
 	justify-content: space-between;
 }
 
-.info__text {
+.info__text-main {
+	max-width: 647px;
+	margin-right: 17px;
+	font-size: 30px;
+	margin-bottom: 14px;
+}
+
+.map-block__map-inner:first-child {
+	margin-bottom: 15px;
+}
+
+.map-block__map-inner {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.info__text-top {
 	line-height: 65px;
+	margin-bottom: 20px;
 }
 
 .title {
@@ -82,7 +100,7 @@ body {
 		font-size: 33px;
 	}
 
-	.wrapper {
+	.container {
 		padding: 22px 31px 26px;
 	}
 
@@ -90,7 +108,7 @@ body {
 		transition: none;
 	}
 
-	.info__text {
+	.info__text-top {
 		line-height: 58px;
 	}
 }
@@ -119,7 +137,7 @@ body {
 		background-position-x: center;
 	}
 
-	.info__text {
+	.info__text-top {
 		line-height: 40px;
 	}
 
