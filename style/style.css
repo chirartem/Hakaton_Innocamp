@@ -15,13 +15,17 @@ body {
 
 .info {
 	max-width: 1219px;
-	min-height: 870px;
+	/*min-height: 870px;*/
 	margin: 0 auto;
 	background-color: #EFF7F6;
 	padding: 27px 35px 20px 33px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*justify-content: space-between;*/
+}
+
+.info__inner {
+	margin-bottom: 80px;
 }
 
 .info__text-main {
@@ -43,7 +47,7 @@ body {
 
 .info__text-top {
 	line-height: 65px;
-	margin-bottom: 20px;
+	margin-bottom: 90px;
 }
 
 .title {
