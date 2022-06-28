@@ -8,14 +8,14 @@
 	<!-- Заголовок -->
 	<title>Состояние</title>
 	<!-- Стили и фавикон -->
-	<link rel="stylesheet" href="style/nullstellen.css">
-	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='style/nullstellen.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='style/style.css') }}">
 </head>
 <body id="top">
 	<header class="header"></header>
 	<div class="container">
 		<section class="info">
-			<form class="form-refresh" action="" method="post">
+			<form class="form-refresh" action="" method="POST">
 				<button type="submit" name="refresh" class="btn-refresh">обновить</button>
 			</form>
 			<div class="info__text-top">
@@ -25,19 +25,19 @@
 
 			<div class="info__inner">
 				<p class="info__text-main">
-					Статус работы:&nbsp;работает, поливает
+					Статус работы:&nbsp;{{data[0][0]}}
 				</p>
 				<p class="info__text-main">
-					Координаты первой точки:&nbsp;123
+					Координаты первой точки:&nbsp;{{data[0][-5]}},&nbsp;{{data[0][-4]}}
 				</p>
 				<p class="info__text-main">
-					Координаты второй точки:&nbsp;123
+					Координаты второй точки:&nbsp;{{data[0][-3]}},&nbsp;{{data[0][-2]}}
 				</p>
 			</div>
 
 			<footer class="info-footer">
 				<div class="info-footer__text">
-					<a href="" class="info-footer__link" target="_blank">Посмотреть на карте</a>
+					<a href="{{data[0][-1]}}" class="info-footer__link" target="_blank">Посмотреть на карте</a>
 				</div>
 			</footer>
 		</div>
